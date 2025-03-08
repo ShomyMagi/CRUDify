@@ -1,0 +1,33 @@
+.user-row {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #f1f1f1;
+  }
+}
+
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  td {
+    padding: 10px 8px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  td {
+    font-size: 0.75rem;
+    padding: 8px;
+  }
+
+  .user-row {
+    font-size: 0.875rem;
+  }
+}
